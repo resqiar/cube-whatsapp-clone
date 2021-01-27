@@ -1,0 +1,38 @@
+.container {
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 14px;
+    margin: 0;
+    max-lines: 1;
+    max-lines: 1;
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 270px;
+    text-overflow: ellipsis;
+}
+
+p {
+    font-size: 12px;
+    max-lines: 1;
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 270px;
+    text-overflow: ellipsis;
+}
+
+.container:hover {
+    background-color: #ebebeb;
+}
+
+.list-tile {
+    padding: 0px 8px;
+}
