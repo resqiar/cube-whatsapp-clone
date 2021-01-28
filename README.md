@@ -1,4 +1,4 @@
-# cube-video-sharing
+# Cube WhatsApp Clone
 A WhatsApp like project where you can chat/text another in real-time.
 
 ## Screenshot
