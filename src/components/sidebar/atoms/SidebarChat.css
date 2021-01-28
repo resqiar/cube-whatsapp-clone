@@ -1,5 +1,5 @@
 .container {
-    padding: 8px 10px;
+    padding: 14px 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,9 +7,10 @@
     cursor: pointer;
 }
 
-h4 {
+.container > .list-tile > h4 {
     font-size: 14px;
     margin: 0;
+    font-weight: 500;
     max-lines: 1;
     max-lines: 1;
     word-wrap: break-word;
@@ -19,7 +20,7 @@ h4 {
     text-overflow: ellipsis;
 }
 
-p {
+.container > .list-tile > p {
     font-size: 12px;
     max-lines: 1;
     word-wrap: break-word;

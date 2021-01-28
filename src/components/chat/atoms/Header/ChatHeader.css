@@ -1,0 +1,21 @@
+.chat__header__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px 18px;
+    background-color: #ededed;
+}
+
+.chat__header__info {
+    flex-grow: 1;
+}
+
+.chat__header__info > h4 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.chat__header__info > p {
+    color: gray;
+    font-size: 12px;
+}
