@@ -9,12 +9,18 @@ function App() {
   // TODO : Save all messages here => update accordingly
   const [messages, setMessages] = useState([])
 
+  const scrollToBottom = () => {
+    const container = document.querySelector(".chat__column");
+    container.scrollTop = container.scrollHeight;
+  }
+
   useEffect(() => {
     // TODO : Fetch all initial messages
     axios.get('/api/v1/messages').then((res) => {
 
       // Set messages 
       setMessages(res.data) // all previous data in the db
+      scrollToBottom()
     })
   }, [])
 
@@ -27,6 +33,7 @@ function App() {
     var channel = pusher.subscribe('message');
     channel.bind('inserted', function(data) {
       setMessages([...messages, data]) // => set any messages input
+      scrollToBottom()
     });
 
 

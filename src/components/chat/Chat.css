@@ -44,3 +44,7 @@
 .chat__input__right {
     padding-left: 16px;
 }
+
+.chat__button {
+    display: none;
+}
