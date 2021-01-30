@@ -3,23 +3,20 @@ import propTypes from 'prop-types'
 import './ChatRow.css'
 
 const ChatRow = (params) => {
-    const className = ["chat__row__container"]
-
-    // If this chat is for sender
-    if(params.isSender) className.push("chat__sender")
 
     return (
-        <div className={className.join(" ")}>
+        <div className={params.className}>
                 {/* <span className="chat__row__username">Daniel Pithecantropus</span><br/> */}
                 <p className="chat__message">{params.text}</p>
-                <span className="chat__row__timestamp">23.40</span>
+                <span className="chat__row__timestamp">{params.timestamp}</span>
         </div>
     )
 }
 
 ChatRow.propTypes = {
-    isSender : propTypes.bool,
+    className: propTypes.string,
     text : propTypes.string,
+    timestamp: propTypes.string,
 }
 
 export default ChatRow
